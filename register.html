@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="wrapper">
+    <span class="icon-close" onclick="window.close()">×</span>
+    <div class="form-box">
+      <h2>Register</h2>
+      <form onsubmit="return registerUser(event)">
+        <div class="input-box">
+          <input type="text" id="name" required />
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" id="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" id="password" required />
+          <label>Password</label>
+        </div>
+        <div class="input-box">
+          <input type="password" id="confirmPassword" required />
+          <label>Confirm Password</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function registerUser(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      const user = { name, email, password };
+      localStorage.setItem("user", JSON.stringify(user));
+      alert("Registration successful!");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
