@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendZone</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+<!--Navbar -->
+
+<nav class="navbar">
+    <h1>TrendZone</h1>
+    <!-- <input class="search" type="text" placeholder="search"> -->
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="Home.Html">Home</a></p> 
+        <p class="navbar-link"><a href="collection.html">Collection</a></p> 
+        <p class="navbar-link"><a href="">Contact</a></p>        
+    </div>
+
+
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+</nav>
+
+<!-- Side Navbar -->
+
+<div class="side-navbar">
+    <p style="text-align: right;" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+
+
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="Home.Html">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collection</a></p>
+        <p class="side-navbar-link"><a href="">Contact</a></p>        
+    </div >
+
+</div>
+
+
+
+<!-- contact-form -->
+
+
+
+
+
+ <!-- Footer -->
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headinText">TrendZone</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, amet.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>          
+              </div>
+        </div>        
+    </div>
+    <p>@ 2025 TrendZone.com</p>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

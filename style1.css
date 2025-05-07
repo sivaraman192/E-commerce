@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url('back.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  color: #000;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navigation .btnLogin-popup {
+  padding: 8px 16px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .form-box h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  border-bottom: 2px solid #0b0b0b;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #0f0e0e;
+  font-size: 1em;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #0d0c0c;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  font-size: 0.8em;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-register {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}

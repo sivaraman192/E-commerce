@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendZone</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+<!--Navbar -->
+
+<nav class="navbar">
+    <h1>TrendZone</h1>
+    <input class="search" type="text" placeholder="search">
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="">Home</a></p> 
+        <p class="navbar-link"><a href="collection.html">Collection</a></p> 
+        <p class="navbar-link"><a href="contact.html">Contact</a></p>        
+    </div>
+
+
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+</nav>
+
+<!-- Side Navbar -->
+
+<div class="side-navbar">
+    <p style="text-align: right;" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+
+
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collection</a></p>
+        <p class="side-navbar-link"><a href="contact.html">Contact</a></p>        
+    </div >
+
+</div>
+
+
+<!-- Header -->
+
+ <div class="slider-container">
+    <div class="slides">
+     <!-- Slide 1 -->
+       <div class="slide">
+        <img src="slide5.avif" alt="Slide 1" /> 
+         <!-- <div class="text-overlay">
+          <h2>Level up your style</h2>
+          <p>With our stunning collection</p>
+          <button>Shop Now</button> 
+        </div>  -->
+      </div>
+
+       <!-- Slide 2  -->
+      <div class="slide">
+        <img src="slide4.webp" alt="Slide 2" />
+        <!-- <div class="text-overlay">
+          <h2>New Arrivals</h2>
+          <p>Discover fresh trends</p>
+          <button>Explore</button>
+        </div>-->
+      </div>
+
+       <!-- Slide 3  -->
+      <div class="slide">
+        <img src="slide6.avif" alt="Slide 3" />
+        <!-- <div class="text-overlay">
+          <h2>Sale is Live!</h2>
+          <p>Get up to 50% off</p>
+          <button>Grab Now</button>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>  
+
+
+
+
+<!-- <div class="header"> -->
+     <!-- <div class=>
+    <h1>Level up your style</h1>
+    <p>With our  stunning collecton</p>
+    <button class="header-button">Shop Now</button>
+    </div> -->
+
+<!-- <div class="two">
+    <img class="header-image" src="1515.jpg" width="300" height="350" />
+</div>
+</div> -->
+
+<!-- service -->
+
+<div class="service">
+    <div class="service-container-1">
+        <div>
+            <h2>We provide best</h2>
+            <h2>Customer Experience</h2>
+        </div>
+
+        <div>
+            <p>|| We ensure that our customer have the best shopping experience</p>
+        </div>
+    </div>
+
+    <div class="service-container-2">
+        <div class="one">
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Statisfaction Guarantee</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, alias. Autem minima quaerat magnam facere! </p>
+        </div>
+
+        <div class="one">
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>new Arrival Everyday</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, alias. Autem minima quaerat magnam facere! </p>
+        </div>
+
+        <div class="one">
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Fast & free  shipping</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, alias. Autem minima quaerat magnam facere! </p>
+        </div>
+
+    </div>
+</div>
+
+<!--  new Arrival-->
+ 
+<div >
+<h2 style="padding: 20px;">New Arrival</h2>
+
+<div class="new-arrival">
+    <div class="new-arrival-container">
+        <img src="new1.png" width="300" height="300">
+        <div class="overlay"></div>
+        <button class="shop-btn" onclick="goToProductPage()">Shop Now <i class="fa fa-arrow-right"></i></button>
+      </div>
+
+      <div class="new-arrival-container">
+        <img src="new2.png" width="300" height="300">
+        <div class="overlay"></div>
+        <button class="shop-btn" onclick="most2()">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="new-arrival-container">
+        <img src="new3.png" width="300" height="300">
+        <div class="overlay"></div>
+        <button class="shop-btn" onclick="most1()">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="new-arrival-container">
+        <img src="new4.png" width="300" height="300">
+        <div class="overlay"></div>
+        <button class="shop-btn" onclick="most3()">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+      </div>
+      
+    </div> 
+</div>
+
+
+<!-- most wanted -->
+
+<div >
+    <h2 style="padding: 20px;">most wanted</h2>
+    
+    <div class="new-arrival">
+      <div class="new-arrival-container">
+        <div class="product-card">
+          <img src="most4.png" width="300" height="300" alt="shirt" class="product-img">
+          <div class="product-details">
+            <p>Sponsored</p>
+            <h2>WOXEN</h2>
+            <h3>Men Regular Fit Solid Spread</h3>
+            <p class="price">
+              <span class="current">₹359</span>
+              <span class="original">₹2,099</span>
+              <span class="discount">82% off</span>
+            </p>
+            <h4>Buy 2 items, save extra ₹30</h4>
+            <h3>Size</h3>
+            <div class="sizes">
+              <button>S</button>
+              <button>M</button>
+              <button>L</button>
+              <button>XL</button>
+              <button>XXL</button>
+            </div>
+          </div>
+          <button class="shop-btn" onclick="most()">Shop Now ➜</button>
+        </div>
+      </div>
+      
+          <div class="new-arrival-container">
+          
+            <img src="most1.png" width="300" height="300" alt="">
+            <div class="overlay"></div>
+            <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="new-arrival-container">
+            <img src="most2.png" width="300" height="300">
+            <div class="overlay"></div>
+            <button class="shop-btn" onclick="most1()">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="new-arrival-container">
+            <img src="most3.png" width="300" height="300">
+            <div class="overlay"></div>
+            <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+          </div>
+         
+    </div>
+    
+    </div>
+
+<!-- Mobiles -->
+
+    <div >
+      <h2 style="padding: 20px;">Mobiles</h2>
+      
+      <div class="new-arrival">
+          <div class="new-arrival-container">
+              <img src="phone1.png" width="300" height="300">
+              <div class="overlay"></div>
+              <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+            </div>
+  
+            <div class="new-arrival-container">
+              <img src="phone2.png" width="300" height="300">
+              <div class="overlay"></div>
+              <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+            </div>
+  
+            <div class="new-arrival-container">
+              <img src="phone3.png" width="300" height="300">
+              <div class="overlay"></div>
+              <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+            </div>
+  
+            <div class="new-arrival-container">
+              <img src="phone4.png" width="300" height="300">
+              <div class="overlay"></div>
+              <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+            </div>
+           
+      </div>
+      
+      </div>
+
+<!-- Women -->
+
+<div >
+  <h2 style="padding: 20px;">Women</h2>
+  
+  <div class="new-arrival">
+      <div class="new-arrival-container">
+          <img src="dress1.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+          <img src="dress2.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+          <img src="dress3.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+          <img src="dress4.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+       
+  </div>
+  
+  </div>
+
+<!-- tv -->
+
+<div >
+  <h2 style="padding: 20px;">Tv</h2>
+  
+  <div class="new-arrival">
+      <div class="new-arrival-container">
+          <img src="tv1.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+          <img src="tv2.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+          <img src="tv3.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+          <img src="tv4.png" width="300" height="300">
+          <div class="overlay"></div>
+          <button class="shop-btn">Shop Now <i class="fa solid fa-arrow-right"></i></button>
+        </div>
+       
+  </div>
+  
+  </div>
+
+
+  
+
+ <!-- News -->
+  
+ <div class="news">
+    <h2>Join our News Letter</h2>
+    <p>Signup for our email newsletter to get exclusive discounts and updates and more</p>
+    <div>
+        <input type="text" class="serach">
+    </div>
+
+    <div>
+        <button>Subscribe</button>
+    </div>
+ </div>
+
+ <!-- Footer -->
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headinText">TrendZone</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, amet.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>          
+              </div>
+        </div>        
+    </div>
+    <p>@ 2025 TrendZone.com</p>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

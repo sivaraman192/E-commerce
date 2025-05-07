@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Most Wanted</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      position: relative;
+      width: 250px;
+      height: 360px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .details {
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px;
+      font-size: 13px;
+      text-align: center;
+      transition: bottom 0.3s ease;
+    }
+
+    .product-card.active .details {
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<h2>most wanted</h2>
+
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="product-card" onclick="toggleDetails(this)">
+    <img src="new3.png" alt="White Shirt">
+    <div class="details">
+      Woxen<br>Men Regular Fit Solid Shirt<br>₹359 – 82% Off
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card" onclick="toggleDetails(this)">
+    <img src="new2.png"Green Shirt">
+    <div class="details">
+      JACKBELLA<br>Self Design Shirt<br>₹339 – 77% Off
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card" onclick="toggleDetails(this)">
+    <img src="new1.png" alt="Checkered Shirt">
+    <div class="details">
+      Surhi<br>Checkered Shirt<br>₹269 – 86% Off
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDetails(card) {
+    // Toggle only this card's active state
+    card.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
