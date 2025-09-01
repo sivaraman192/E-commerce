@@ -30,6 +30,9 @@ function most3() {
   window.location.href = "collection4.html";
 }
 
+
+
+
 // // Show details on image click
 // function toggleDetails(event, card) {
 //   event.stopPropagation();
@@ -164,6 +167,7 @@ function submitReview() {
   closeModal();
 }
 
+// ====== Slider/Carousel ======
 // ====== Slider/Carousel ======
 const slides = document.querySelector('.slides');
 const dots = document.querySelectorAll('.dot');

@@ -1,0 +1,17 @@
+dir
+code .
+git commit
+git add .
+git commit -m "Initial commit with all project files"
+git remote add origin <https://github.com/sivaraman192/commerce.git>
+git remote add origin <your-repo-URL>
+git push -u origin main
+git branch
+history.txt
+git history.txt
+dockey histry
+doskey histry
+.bash_history
+doskey /history
+doskey /history.txt
+doskey /history>histor.txt

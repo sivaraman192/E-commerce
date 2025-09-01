@@ -461,6 +461,13 @@ body{
     color: #fff;
 }
 
+
+/*  */
+
+
+/*  */
+
+
 .product-section{
     margin-top: 20px;
 }
@@ -952,6 +959,75 @@ body{
   transform: translateY(0);
   pointer-events: auto;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.input-box input,
+.input-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #333;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+
+
 
   
 
